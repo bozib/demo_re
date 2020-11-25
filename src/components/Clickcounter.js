@@ -9,7 +9,7 @@ import React, { Component } from 'react'
          }
      }
      incrementCount = () => {
-         this.setState(prevState => {
+         this.setState (prevState => {
              return {count: prevState.count + 1 }
          })
              

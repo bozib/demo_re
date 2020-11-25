@@ -22,6 +22,8 @@ import Hero from './components/Hero';
 import ErrorBoundry from './components/ErrorBoundry';
 import Clickcounter from './components/Clickcounter';
 import Hovercounter from './components/Hovercounter';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
 
 
 
@@ -29,10 +31,12 @@ import Hovercounter from './components/Hovercounter';
   render() {
     return (
       <div className ='App'>
-  <Clickcounter/>
-  <Hovercounter/>
-        
+    {/*  <UserProvider value= 'Konj' >*/}
+        <ComponentC/>
+        {/* </UserProvider> */}
         {/*
+        <Clickcounter/>
+        <Hovercounter/>
         <PortalDemo/>
         <FRparentInput/>
         <FocusInput/>
